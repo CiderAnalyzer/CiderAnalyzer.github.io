@@ -29,20 +29,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
+             <li class="nav-item active">
               <a class="nav-link" href="#">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="empirical_study.html">Empirical Study</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#">Tool</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li> -->
+              <a class="nav-link" href="#">Detected Issues</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -64,20 +64,76 @@
 
       <div class="row">
         <div class="col-sm-8">
-          <h2 class="mt-4">Research Paper</h2>
-          <p>Huaxun Huang, Lili Wei, Yepang Liu, and S.C. Cheung. “Understanding and Detecting Callback Compatibility Issues for Android Applications”. In Proceedings of the 33st ACM/IEEE International Conference on Automated Software Engineering (ASE 2018), Montpellier, France, Sept 2018.</p>
+            
+        <h2 class="mt-4">Research Paper</h2>
+          <p>Huaxun Huang, Lili Wei, Yepang Liu, and Shing-Chi Cheung. “Understanding and Detecting Callback Compatibility Issues for Android Applications”. In Proceedings of the 33st ACM/IEEE International Conference on Automated Software Engineering (ASE 2018), Montpellier, France, Sept 2018.</p>    
+        <h2 class="mt-4">Research Materials</h2>
+        <p>
+            This website will provide you with the following information:
+            <li>
+                The dataset to answer empirical research questions.
+            </li>
+            <li>
+                Detailed information of PI-Graph and CIDER.
+            </li>
+            <li>
+                Detailed information of issue detected by CIDER.
+            </li>
+        </p>
+          <h2 class="mt-4">Overview</h2>
+          <p>The main goal of CIDER project is to help Android developers understand and detect callback compatibility issues, which are mainly caused by control flow inconsistencies due to callback API evolutions.</p>
+          <p>
+              To achieve this, we first conduct an empirical study with the following steps:
+              <li>
+              We collected a list of callback APIs from Android API Reference.
+              </li>
+              <li>
+             We study how they evolved from Android API Reference, Android Differences Reports, and git commits in Android Open Source Project (AOSP). 
+              </li>
+              <li>
+            We studied real-world callback compatibility issues from open-source Android projects.
+              </li>
+          </p>
+        We observed from the study that there are two common types of callback compatibility issues.
+            <li>
+                CCFG structural changes
+            </li>
+            <li>
+                CCFG non-structural changes
+            </li>
+        We then designed CIDER to automatically detect callback compatibility issues based on static analysis.
+        CIDER is built on top of Soot framework.
+        CIDER now can detect issues induced by CCFG structural changes.
+        To test whether CIDER is useful for detecting real issues in Android apps, we evaluate CIDER on 20 real Android apps collected from GitHub. In total, CIDER found 13 callback compatibility issues, and 9 of them have been fixed by the original developers.
+            
+        <p>
+            This website will provide you with the following information:
+            <li>
+                The dataset to answer empirical research questions.
+            </li>
+            <li>
+                Detailed information of PI-Graph and CIDER.
+            </li>
+            <li>
+                Detailed information of issue detected by CIDER.
+            </li>
+        </p>
+            
+<!--
           <p>
             <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
           </p>
+-->
         </div>
         <div class="col-sm-4">
-          <h2 class="mt-4">Contact Me</h2>
-          <address>
-            <strong>Huaxun Huang</strong>
+          <h2 class="mt-4">Researcher</h2>
+            Huaxun Huang
             <br>
-            <abbr title="Email">Email:</abbr>
-            hhuangas at cse dot ust dot hk
-          </address>
+            Lili Wei
+            <br>
+            Yepang Liu
+            <br>
+            Shing-Chi Cheung
         </div>
       </div>
       <!-- /.row -->
@@ -129,7 +185,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Maintained by Huaxun Huang | Last Updated: July 27, 2018</p>
+        <p class="m-0 text-center text-white">Maintained by Huaxun Huang | Last Updated: July 31, 2018</p>
       </div>
       <!-- /.container -->
     </footer>

@@ -1,0 +1,114 @@
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CIDER Homepage</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">CIDER</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Empirical Study</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tool</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Detected Issues</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header with Background Image -->
+    <header class="business-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="display-3 text-center text-white mt-4">CIDER: Understanding and Detecting Callback Compatibility Issues for Android Applications</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">Empirical Study</h2>
+            <p> Our empirical study aims to answer the following research questions: </p>
+            <li><strong>RQ1:</strong> How do the evolutions of callback APIs change the API invocation protocols? Are there any frequently-evolved callback APIs? </li>
+            <li><strong>RQ2:</strong> How do the evolutions of callback APIs induce callback compatibility issues? Are there major issue-inducing causes? </li>
+            <br>
+            <p>You can download the following datasets for research purposes.</p>
+            <b>Note:</b> The empirical dataset is only applicable for personal usage.
+          <h2 class="mt-4">RQ1 Callback API Evolutions</h2>
+            <p> To answer this research question, we need to collect a list of callback APIs and study how they evolved. </p>
+            <p> In total, we collected 2,589 callback APIs to form the callback API list. We further refer to the code commits in AOSP to study the updates of callback APIs, and categorized them into two groups: <b>reachability change</b> and <b>API behavioral modification</b>.</p>
+            <p>Click <a>here</a> to download and view the list of callback APIs and the taxonomy result.</p>
+          <h2 class="mt-4">RQ2 Causes of Callback Compatibility Issues</h2>
+            <p> To understand how callback API evolutions can induce compatibility issues in real Android applications, we investigated 100 callback compatibility issues from 50 open-source projects on GitHub. </p>
+            <p> We further analyzed the online discussions, issue patches, and issue git commits to understand the practices of app developers to fix issues. </p>
+            <p> We categorized issues into two categories: <b>CCFG structural changes</b> and <b>CCFG non-structural changes</b>.</p>
+            <p>Click <a>here</a> to download and view the detailed information of issues in our empirical study. Note that several issues are highlighted in our research paper.</p>
+            <br>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="mt-4">Researcher</h2>
+            Huaxun Huang
+            <br>
+            Lili Wei
+            <br>
+            Yepang Liu
+            <br>
+            Shing-Chi Cheung
+        </div>
+      </div>
+        
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Maintained by Huaxun Huang | Last Updated: July 31, 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
