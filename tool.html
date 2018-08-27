@@ -38,10 +38,10 @@
               <a class="nav-link" href="empirical_study.html">Empirical Study</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tool.html">Tool</a>
+              <a class="nav-link" href="#">Tool</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="detected_issues.html">Detected Issues</a>
+              <a class="nav-link" href="#">Detected Issues</a>
             </li>
           </ul>
         </div>
@@ -65,49 +65,20 @@
       <div class="row">
         <div class="col-sm-8">
             
-        <h2 class="mt-4">Research Paper</h2>
-          <p>Huaxun Huang, Lili Wei, Yepang Liu, and Shing-Chi Cheung. “Understanding and Detecting Callback Compatibility Issues for Android Applications”. In Proceedings of the 33st ACM/IEEE International Conference on Automated Software Engineering (ASE 2018), Montpellier, France, Sept 2018. [<a href="https://huaxunhuang.github.io/src/72ase18.pdf">preprint</a>]</p>    
-        <h2 class="mt-4">Research Materials</h2>
+        <h2 class="mt-4">CIDER</h2>
+          <p>CIDER leverages graph-based model to detect callback compatibility issues in Android applications.</p>    
+        <h2 class="mt-4">Obtain CIDER</h2>
         <p>
-            This website will provide you with the following information:
-            <li>
-                The dataset to answer empirical research questions.
-            </li>
-            <li>
-                Detailed information of PI-Graph and CIDER.
-            </li>
-            <li>
-                Detailed information of issue detected by CIDER.
-            </li>
+            Please leave your contact information and submit a request. Do not submit multiple requests.
+            <form>
+                Name: 
+                <br/>
+                Email:
+                <br/>
+                Affiliation:
+          </form>
         </p>
-          <h2 class="mt-4">Overview</h2>
-          <p>The main goal of CIDER project is to help Android developers understand and detect callback compatibility issues, which are mainly caused by control flow inconsistencies due to callback API evolutions.</p>
-          <p>
-              To achieve this, we first conduct an empirical study with the following steps:
-              <li>
-              We collected a list of callback APIs from Android API Reference.
-              </li>
-              <li>
-             We study how they evolved from Android API Reference, Android Differences Reports, and git commits in Android Open Source Project (AOSP). 
-              </li>
-              <li>
-            We studied real-world callback compatibility issues from open-source Android projects.
-              </li>
-          </p>
-        We observed from the study that there are two common types of callback compatibility issues.
-            <li>
-                CCFG structural changes
-            </li>
-            <li>
-                CCFG non-structural changes
-            </li>
-        We then designed CIDER to automatically detect callback compatibility issues based on static analysis.
-        CIDER is built on top of Soot framework.
-        CIDER now can detect issues induced by CCFG structural changes.
-        To test whether CIDER is useful for detecting real issues in Android apps, we evaluate CIDER on 20 real Android apps collected from GitHub. In total, CIDER found 13 callback compatibility issues, and 9 of them have been fixed by the original developers.
             
-          <br>
-          <br>
 <!--
           <p>
             <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
@@ -127,6 +98,46 @@
       </div>
       <!-- /.row -->
 
+      <!-- <div class="row">
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
+            <div class="card-body">
+              <h4 class="card-title">Card title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+      </div> -->
+      <!-- /.row -->
 
     </div>
     <!-- /.container -->
