@@ -29,19 +29,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
-                <span class="sr-only">(current)</span>
+             <li class="nav-item">
+              <a class="nav-link" href="index.html">Home
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="empirical_study.html">Empirical Study</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tool</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="tool.html">Tool
+                  <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Detected Issues</a>
+              <a class="nav-link" href="detected_issues.html">Detected Issues</a>
             </li>
           </ul>
         </div>
@@ -66,24 +66,38 @@
         <div class="col-sm-8">
             
         <h2 class="mt-4">CIDER</h2>
-          <p>CIDER leverages graph-based model to detect callback compatibility issues in Android applications.</p>    
-        <h2 class="mt-4">Obtain CIDER</h2>
+          <p>Based on the findings in our empirical study, we proposed PI-Graph, a graph-based model, to help detect callback compatibility issues in Android applications. With this model, we further design and implement CIDER, to help developers detect callback compatibility issues in Android applications.</p>
+        
+        <h2 class="mt-4"> PI-Graph Model </h2>    
+        <p> 
+            From our empirical study, we find that the issues caused by CCFG structural inconsistencies take the majority in our dataset.
+            Based on this, we propose PIGraph, a graph-based model capturing CCFG structural inconsistencies among different API levels.
+            PI-Graph is extracted from different versions of Android system.
+            For more detail, please refer to the <a href="https://huaxunhuang.github.io/src/72ase18.pdf">research paper</a>.
+            
+        </p>
+        
+        <h2 class="mt-4"> Implementation of CIDER </h2>
+            CIDER is implemented on top of <a href="https://sable.github.io/soot/">Soot</a>.
+            We leverage the call graph to analyze the source code of the given Android applications.</p>
+        <p> 
+            We have integrated a list of 7 PI-Graph together with CIDER, which are all the PI-Graph models used in our evaluation. Click <a href="">here</a> to check the detail of 7 PI-Graph models.
+        </p>
+        
+        <h2 class="mt-4">Try CIDER</h2>
         <p>
             Please leave your contact information and submit a request. Do not submit multiple requests.
-            <form>
-                Name: 
+            <form method="get">
+                Name: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" />
                 <br/>
-                Email:
+                Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" />
                 <br/>
-                Affiliation:
+                Affiliation: <input type="text" name="affiliation" />
+                <br />
+                 <input type="submit" value="Submit" />
           </form>
         </p>
             
-<!--
-          <p>
-            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
-          </p>
--->
         </div>
         <div class="col-sm-4">
           <h2 class="mt-4">Researcher</h2>
@@ -96,47 +110,6 @@
             Shing-Chi Cheung
         </div>
       </div>
-      <!-- /.row -->
-
-      <!-- <div class="row">
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 my-4">
-          <div class="card">
-            <img class="card-img-top" src="http://placehold.it/300x200" alt="">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-            </div>
-            <div class="card-footer">
-              <a href="#" class="btn btn-primary">Find Out More!</a>
-            </div>
-          </div>
-        </div>
-
-      </div> -->
       <!-- /.row -->
 
     </div>
